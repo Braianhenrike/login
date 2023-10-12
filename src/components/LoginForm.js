@@ -1,6 +1,5 @@
 import classNames from "classnames";
 import * as React from "react";
-// import classNames from "classnames";
 
 export default class LoginForm extends React.Component {
 
@@ -51,12 +50,12 @@ export default class LoginForm extends React.Component {
               <form onSubmit={this.onSubmitLogin}>
 
                 <div className="form-outline mb-4">
-                  <input type="login" id="loginName" name="login" className="form-control" onChange={this.onChangeHandler} />
-                  <label className="form-label" htmlFor="loginName">Login</label>
+                  <input type="login" id="login" name="login" className="form-control" onChange={this.onChangeHandler} />
+                  <label className="form-label" htmlFor="login">Login</label>
                 </div>
 
                 <div className="form-outline mb-4">
-                  <input type="password" id="loginPassword" name="password" className="form-control" onChange={this.onChangeHandler} />
+                  <input type="password" id="password" name="password" className="form-control" onChange={this.onChangeHandler} />
                   <label className="form-label" htmlFor="loginPassword">Password</label>
                 </div>
 
