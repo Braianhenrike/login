@@ -1,0 +1,76 @@
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Fundo escuro translúcido */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000; /* Z-index alto para aparecer sobre tudo */
+}
+
+/* Estilo para o LoginNull (pop-up) */
+.login-popup {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  width: 35%;
+  height: 35%;
+  text-align: center;
+}
+
+/* Estilo para o conteúdo do pop-up */
+.popup-content {
+  padding: 16px;
+}
+
+.btn {
+  line-height: 50px;
+  height: 50px;
+  text-align: center;
+  width: 200px;
+  cursor: pointer;
+}
+
+.btn-two {
+  color: #FF6766;
+  transition: all 0.5s;
+  position: relative; 
+  margin: 25px 30px;
+}
+
+.btn-two::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  transition: all 0.5s;
+  border: 1px solid rgba(253, 0, 34);
+  background-color: rgba(255,255,255,0.1);
+}
+.btn-two::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  transition: all 0.5s;
+  border: 1px solid rgba(253, 0, 34);
+  background-color: rgba(255,255,255,0.1);
+}
+.btn-two:hover::before {
+  transform: rotate(-45deg);
+  background-color: rgba(253, 0, 34, 0.5);
+}
+.btn-two:hover::after {
+  transform: rotate(45deg);
+  background-color: rgba(253, 0, 34, 0.5);
+}
